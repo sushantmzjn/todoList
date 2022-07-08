@@ -49,7 +49,7 @@ public class RecyclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
             builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    adapter.notifyItemChanged(viewHolder.getAdapterPosition());
+                    adapter.notifyItemChanged(viewHolder.getAbsoluteAdapterPosition());
                 }
             });
             AlertDialog dialog = builder.create();

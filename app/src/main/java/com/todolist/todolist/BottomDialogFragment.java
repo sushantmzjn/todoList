@@ -62,6 +62,7 @@ public class BottomDialogFragment extends BottomSheetDialogFragment {
 
         Title = requireView().findViewById(R.id.Title);
         addButton = getView().findViewById(R.id.addList);
+        addButton.setEnabled(false);
 
         boolean isUpdate = false;
 
